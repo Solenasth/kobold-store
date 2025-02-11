@@ -23,7 +23,7 @@ onMounted(fetchProducts)
 </script>
 
 <template>
-  <div class="h-screen w-screen bg-slate-200 p-4">
+  <div class="h-full w-screen bg-red-900 p-4">
     <h1 class="text-2xl font-bold">Our product</h1>
     <ProductGrid :products />
   </div>

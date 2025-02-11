@@ -1,6 +1,6 @@
 <template>
   <span
-    class="mr-2 mb-2 inline-block rounded-full bg-violet-200 px-3 py-1 text-sm font-semibold text-violet-800"
+    class="mr-1 mb-1 inline-block rounded-lg border-0 bg-white px-1 py-1 text-sm font-semibold text-amber-800"
   >
     #{{ tag }}
   </span>
