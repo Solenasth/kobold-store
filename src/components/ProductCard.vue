@@ -38,6 +38,8 @@
       <p class="mb-6 line-clamp-5 h-30 text-base text-clip text-gray-700">
         {{ product.description }}
       </p>
+
+      <!-- price & add to cart -->
       <div class="content-middle mb-1 flex items-center justify-between pb-1">
         <p><span class="font-bold text-yellow-800">Price: </span> {{ product.price }} gold</p>
         <button>Add to Hoard</button>
