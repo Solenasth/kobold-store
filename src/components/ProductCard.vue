@@ -42,7 +42,12 @@
       <!-- price & add to cart -->
       <div class="content-middle mb-1 flex items-center justify-between pb-1">
         <p><span class="font-bold text-yellow-800">Price: </span> {{ product.price }} gold</p>
-        <button>Add to Hoard</button>
+        <button
+          @click="store.addToCart(product)"
+          class="border-2 border-red-700 px-2 text-red-700 hover:bg-orange-200"
+        >
+          Add to Hoard
+        </button>
       </div>
 
       <!-- divisor -->
@@ -50,6 +55,7 @@
       <!-- tags -->
       <div class="pt-1" v-if="product.tags.length">
         <Chip v-for="(tag, index) in product.tags" :key="`${product.name}_tag_${index}`" :tag />
+        <h1>{{ store.productCountById(product.id) }}</h1>
       </div>
     </div>
   </div>
@@ -59,6 +65,9 @@
 import { computed } from 'vue'
 import Chip from './CardChip.vue'
 import type { Product } from './types'
+import { useCartStore } from '@/stores/cartStore'
+
+const store = useCartStore()
 
 const props = defineProps<{
   product: Product
