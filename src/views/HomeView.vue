@@ -11,9 +11,9 @@
       </p>
       <router-link
         to="/products"
-        class="text-semibold mt-6 inline-block rounded-lg bg-red-500 px-6 py-3 font-semibold text-white shadow-md hover:bg-red-700"
+        class="text-semibold mt-6 flex items-center rounded-lg bg-red-500 px-6 py-3 font-semibold text-white shadow-md hover:bg-red-700"
       >
-        Find Loot
+        <span>Find Loot </span> <span class="pl-3 text-3xl">→</span>
       </router-link>
     </div>
   </section>
